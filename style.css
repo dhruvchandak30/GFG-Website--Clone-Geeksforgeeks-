@@ -1,0 +1,1042 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: antiquewhite
+}
+
+header {
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  height: 50px;
+}
+
+nav {
+  max-width: 1100px;
+  display: flex;
+  justify-content: left;
+}
+
+/* ******************************************     M E N U     ****************************************** */
+.menu>li,
+.menu>a {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: azure;
+  display: block;
+  padding: 1px;
+  transition: background-color 2s ease, color .22s ease;
+  text-align: left;
+  padding-top: 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  color: rgb(0, 167, 94);
+}
+
+.menu .Submenu li:hover {
+  background-color: rgba(137, 137, 137, 0.192);
+  color: rgb(0, 153, 20);
+}
+
+.menu .Submenu2 li:hover {
+  background-color: rgba(137, 137, 137, 0.192);
+  color: rgb(0, 157, 24);
+}
+
+/*************** Sublevel Dropdown 1 ***************/
+.Submenu {
+  position: absolute;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  padding-left: 10px;
+  width: 210px;
+  left: 0px;
+  display: none;
+  height: auto;
+  z-index: 40px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 3px;
+  font-weight: 400;
+  top: 51px;
+  z-index: 500;
+}
+
+
+
+.Submenu2 {
+  position: absolute;
+  background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  width: 230px;
+  left: 100%;
+  padding-left: 15px;
+  top: 0;
+  height: auto;
+  display: none;
+  z-index: 43px;
+  font-size: 2px;
+  font-weight: 100;
+  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 3px;
+  font-weight: 400;
+}
+
+.Submenu3 {
+  position: absolute;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  width: 200px;
+  height: auto;
+  left: 0px;
+  display: none;
+  z-index: 45px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 3px;
+  font-weight: 400;
+}
+
+.ForRecruiters {
+  display: inline-block;
+  background-color: rgba(225, 219, 60, 0.897);
+  color: black;
+  border-radius: 3.5px;
+  font-size: 13px;
+}
+
+.Trending {
+  display: inline-block;
+  background-color: rgba(225, 219, 60, 0.897);
+  color: black;
+  border-radius: 3.5px;
+  font-size: 13px;
+}
+
+.JobFair {
+  color: red;
+  padding-left: 13px;
+}
+
+.Live_Jobs {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  right: 260px;
+  font-size: 13px;
+  width: 30px;
+  height: 20px;
+  background-color: red;
+  border-radius: 4px;
+}
+
+.menu li:hover>.Submenu {
+  display: block;
+  z-index: 50px;
+}
+
+.Submenu li:hover>.Submenu2 {
+  display: block;
+  z-index: 50px;
+  color: white;
+}
+
+.Submenu2 li:hover>.Submenu3 {
+  display: block;
+  z-index: 50px;
+}
+
+@keyframes slideup {
+
+  0% {
+    opacity: 0;
+    transform: translate(18px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  display: inline-block;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 7%;
+  height: 19px;
+}
+
+.container i {
+  padding: 2px;
+  display: inline-block;
+  font-size: 12.5px;
+  transition: all 0.3s ease;
+}
+
+.container i:hover {
+  transform: rotateZ(-180deg);
+}
+
+.GFG_Logo {
+  position: relative;
+  top: 8px;
+  left: 200px;
+}
+
+.SearchIcon {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  right: -750px;
+  z-index: 150px;
+  top: 2px;
+  background-color: transparent;
+}
+
+.SearchBar_Header {
+  display: none;
+  position: relative;
+  padding-top: 10px;
+  right: -500px;
+  z-index: 120px;
+}
+
+
+.LangTag {
+  position: relative;
+  top: 10px;
+  right: -780px;
+}
+
+.SignIn {
+  position: relative;
+  background-color: rgba(83, 83, 83, 0.329);
+  height: 30px;
+  width: 85px;
+  right: -810px;
+  top: 10px;
+  border-radius: 5px;
+}
+
+
+.GFG_JobFair {
+  background-color: rgb(70, 202, 173);
+  width: 135px;
+  height: 39px;
+  text-align: center;
+  padding: 3px;
+  display: inline-block;
+  font-stretch: extra-condensed;
+}
+
+.SubHeader_Tags a {
+  text-decoration: none;
+  color: aliceblue;
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.SubHeader_Tags a:hover {
+  text-decoration: none;
+  color: rgb(0, 102, 44);
+  display: inline-block;
+  padding-top: 4px;
+  transition: color 0.3s ease-in 3s ease-out;
+}
+
+.SubHeader li {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.SubHeader {
+  width: 50px;
+  background-color: rgb(24, 24, 24);
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  z-index: 100;
+  position: sticky;
+  top: -0.3vh;
+  opacity: 1;
+}
+
+
+
+/* *******************************************************      P A R T  1      ***************************************** */
+.Part1 {
+  background-image: linear-gradient(#4d4d4d, #0a0a0a);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: -1;
+}
+
+.Whatdoyouwanttolearn {
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: ultra-expanded;
+  padding-bottom: 17px;
+  font-size: larger;
+  color: white;
+}
+
+.Search {
+  display: inline-block;
+  background-color: rgb(32, 31, 31);
+  padding: 4px;
+  font-size: 20px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 45px;
+  width: 6vw;
+  position: relative;
+  top: 0.1vh;
+  left: -1vh;
+}
+
+.searchbar {
+  width: 6vh;
+  display: inline-block;
+}
+
+.Line_Height {
+  line-height: 0.8;
+}
+
+.Python_Django {
+  background-color: rgb(31, 31, 31);
+  display: inline-flex;
+  border-radius: 4px;
+  justify-content: center;
+  width: 17vw;
+  font-size: smaller;
+  padding-top: 2px;
+}
+
+.AppDev_Kotlin {
+  background-color: rgb(31, 31, 31);
+  display: inline-flex;
+  border-radius: 4px;
+  justify-content: center;
+  width: 18.5vw;
+  font-size: smaller;
+  padding-top: 2px;
+}
+
+.Interview_Prep {
+  background-color: rgb(31, 31, 31);
+  display: inline-flex;
+  border-radius: 4px;
+  justify-content: center;
+  width: 16vw;
+  font-size: smaller;
+  padding-top: 2px;
+}
+
+.For_You {
+  background-image: linear-gradient(#232323, #111112);
+  height: 40vh;
+  width: 88vw;
+  border-radius: 17px;
+  position: relative;
+  left: 16vh;
+  top: 10vh;
+  z-index: -1;
+}
+
+
+.For_You h1 {
+  justify-content: left;
+  text-align: left;
+  padding-left: 85px;
+}
+
+.For_You .You {
+  display: inline-block;
+  padding: 10px 50px;
+}
+
+.For_You p {
+  font-size: smaller;
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+  text-align: left;
+}
+
+.Read .Practices .Learn {
+  background-color: rgb(0, 0, 0);
+  justify-content: right;
+  width: 20vw;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: yellowgreen;
+  border: 5px solid rgb(222, 82, 82);
+}
+
+.Read h2,
+.Practices h2,
+.Learn h2 {
+  text-align: left;
+  font-size: 3vh;
+}
+
+.You:hover {
+  background-color: rgb(54, 54, 54);
+  border: 5px solid rgb(35, 34, 34);
+}
+
+.Learn :hover {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 13px silver;
+  animation: anime 10s linear infinite;
+}
+
+
+/* *********************************************************************************** */
+
+
+
+/* ***************************************************        P A R T   2      ****************************************** */
+
+.Part2 {
+  background-color: #0a0a0a;
+  height: 1000px;
+  z-index: 3px;
+  z-index: -10;
+}
+
+.Preorder {
+  display: inline-block;
+  padding-left: 200px;
+  color: white;
+}
+
+.Preoder_Para {
+  display: inline-block;
+  padding-left: 24px;
+  padding-top: 14px;
+  font-weight: lighter;
+  color: rgb(172, 172, 172);
+}
+
+.Preorder h2 {
+  padding-top: 37px;
+  padding-left: 25px;
+  font-weight: light;
+  word-spacing: 1px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.Preorder_Words {
+  position: relative;
+  top: -41vh;
+  right: -46vw;
+  text-align: left;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  border: 1.5px solid gray;
+  height: 40vh;
+  width: 32vw;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Data_Structures {
+  position: relative;
+  top: -25vh;
+  left: 13vw;
+  color: white;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  z-index: -0;
+}
+
+.Data_Structures .Dsa {
+  padding-left: 5px;
+  border: 2px solid black;
+}
+
+.Dsa:hover {
+  padding-left: 5px;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px silver;
+  animation: anime 10s linear infinite iteration-count direction fill-mode;
+}
+
+.ViewAll {
+  background-color: #0a0a0a;
+  font-size: smaller;
+  border: 1px solid white;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: -3vh;
+  left: 67vw;
+}
+
+.ViewAll :hover {
+  transition: 1s ease;
+  background-color: #0a0a0a;
+  font-size: smaller;
+  border: 0.5px solid green;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: -3vh;
+  left: 66vw;
+  color: rgb(53, 255, 53);
+}
+
+.DS_Array {
+  background-image: linear-gradient(to bottom right, #208cd4, #52d2f3);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+
+
+.DS_LinkedList {
+  background-image: linear-gradient(to bottom right, #3d9682, #57d0ba);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.DS_Stack {
+  background-image: linear-gradient(to bottom right, #d59434, #fabc4b);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.DS_Queue {
+  background-image: linear-gradient(to bottom right, #da434e, #f27581);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.AlgoRithms {
+  position: relative;
+  top: -15vh;
+  left: 13vw;
+  color: white;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+
+.AnalysisofAlgo {
+  background-image: linear-gradient(to bottom right, #da434e, #f27581);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.SearchAlgo {
+  width: 17vw;
+  background-image: linear-gradient(to bottom right, #208cd4, #52d2f3);
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.SortingAlgo {
+  background-image: linear-gradient(to bottom right, #3d9682, #57d0ba);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.GraphAlgo {
+  background-image: linear-gradient(to bottom right, #d59434, #fabc4b);
+  width: 17vw;
+  height: 20vh;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+/* *******************************************************     P A R T   3     ****************************************** */
+
+.P3 {
+  background-color: rgba(45, 45, 45, 0.85);
+  width: 20vw;
+  height: 40vh;
+  color: white;
+  display: inline-flex;
+  position: relative;
+  margin: 50px;
+}
+
+.P3 h5 {
+  padding-left: 10px;
+  font-size: smaller;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.Part3 div:hover {
+
+  border: 0px solid transparent;
+  border-radius: 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 18px silver;
+  animation: anime 15s linear infinite iteration-count direction fill-mode;
+}
+
+.Part3 {
+  position: relative;
+  color: white;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  background-color: rgb(33, 33, 33);
+  height: 130vh;
+}
+
+.Part3 h1 {
+  position: relative;
+  top: 9vh;
+  left: 10vw;
+}
+
+.Part3 .P3 {
+  border: 0px solid black;
+  display: inline-block;
+  height: 50vh;
+  border-radius: 10px;
+  width: 24vw;
+  height: 47vh;
+}
+
+.P3:hover {
+
+  border: 10px solid transparent;
+  cursor: pointer;
+  box-shadow: 50px 50px 100px silver;
+  animation: anime 10s linear infinite iteration-count direction fill-mode;
+  border-radius: 20px;
+}
+
+.P3 p {
+  font-size: 13px;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+.ViewAll_1 {
+  background-color: #0a0a0a;
+  font-size: smaller;
+  border: 1px solid white;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 7vh;
+  left: 86vw;
+}
+
+.ViewAll_1 :hover {
+  transition: 1s ease;
+  background-color: #0a0a0a;
+  font-size: smaller;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.JavaBackend {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: 3vh;
+  left: 7vw;
+}
+
+.DevOpsEng {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: 2.5vh;
+  left: 4vw;
+}
+
+.DSA_SelfPaced {
+  display: inline;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: 2vh;
+  left: 1.5vw;
+}
+
+.DSA_Python_Self {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 22px;
+  position: relative;
+  top: -7vh;
+  left: 7vw;
+}
+
+.DSA_Classes {
+  display: inline;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: -7vh;
+  left: 4vw;
+}
+
+.FullStack {
+  display: inline;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: -7vh;
+  left: 1.5vw;
+}
+
+/* ********************************************     P A R T  4          *********************************************** */
+.P4 {
+  background-color: rgba(45, 45, 45, 0.85);
+  width: 20vw;
+  height: 40vh;
+  color: white;
+  display: inline-flex;
+  position: relative;
+  margin: 50px;
+}
+
+.Part4_Videoes div:hover {
+
+  border: 0px solid transparent;
+  border-radius: 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 18px silver;
+  animation: anime 15s linear infinite iteration-count direction fill-mode;
+}
+
+
+.Part4_Videoes {
+  position: relative;
+  color: white;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  background-color: rgb(0, 0, 0);
+  height: 65vh;
+}
+
+.Part4_Videoes h1 {
+  position: relative;
+  top: 5vh;
+  left: 10vw;
+}
+
+.P4 h5 {
+  padding-left: 10px;
+  font-size: smaller;
+  font-weight: 500;
+  padding-top: 0px;
+}
+
+.P4 p {
+  font-size: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  color: gray;
+}
+
+.Part4_Videoes .P4 {
+  border: 0px solid black;
+  display: inline-block;
+  height: 50vh;
+  border-radius: 10px;
+  width: 20.9vw;
+  height: 40vh;
+}
+
+.P4:hover {
+  border: 10px solid transparent;
+  cursor: pointer;
+  box-shadow: 50px 50px 100px silver;
+  animation: anime 10s linear infinite iteration-count direction fill-mode;
+  border-radius: 20px;
+}
+
+
+.ViewAll_Videoes {
+  background-color: #0a0a0a;
+  font-size: smaller;
+  border: 1px solid white;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 4vh;
+  left: 81.2vw;
+}
+
+.ViewAll_Videoes :hover {
+  transition: 1s ease;
+  background-color: #0a0a0a;
+  font-size: smaller;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ChatGPT4 {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: -1vh;
+  left: 7vw;
+}
+
+.Flutter {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: -1vh;
+  left: 7vw;
+}
+
+.FullStack_dev {
+  display: inline-flex;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 23px;
+  position: relative;
+  top: -1vh;
+  left: 6vw;
+}
+
+/* *********************************************     F O O T E R    ********************************************* */
+.Footer_Main {
+  height: 550px;
+  background-color: black;
+
+}
+
+.GFG_About h5:hover {
+  color: green;
+}
+
+.GFG_About {
+  padding-left: 40px;
+  padding-top: 80px;
+  display: inline-table;
+  color: white;
+}
+
+.GFG_About h2 {
+  padding-bottom: 20px;
+}
+
+.Footer1 {
+  display: inline-table;
+  padding-left: 70px;
+  font-size: medium;
+  font-weight: 500;
+  position: relative;
+  top: -30vh;
+  left: 20vw;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.Tags_Footer p {
+  padding-top: 5px;
+}
+
+.Footer1 h5 {
+  color: green;
+}
+
+.Footer1 p:hover {
+  color: green;
+}
+
+
+/* *********************************   O R I G I N A L   F O O T E R    ************** ******************* */
+
+footer {
+  background-color: #2d2d2d;
+  width: 100%;
+  position: fixed;
+  bottom: 0vh;
+  height: 8vh;
+  padding-top: 10px;
+}
+
+footer h2 {
+  padding-left: 450px;
+  display: inline;
+  padding-right: 20px;
+  font-weight: 550;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+footer h4 {
+  display: inline;
+  color: green;
+  border: 1px solid green;
+  width: 10vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 19px;
+  padding: 9px 32px;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+footer h5 {
+  display: inline;
+  color: white;
+  background-color: rgb(48, 186, 48);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+footer h5:hover {
+  background-color: rgb(55, 161, 55);
+}
+
+/* ******************************************************************************************************************************************** */

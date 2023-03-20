@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- T I T L E   &    D E S C R I P T I O N -->
+    <meta name="Description"
+        content="Get curated problem lists by GFG ex... DSA Self Paced. Most popular course on DSA trusted by over 75,000 students! Built with years of experience by indus.">
+    <title>GeeksforGeeks | A Computer science portal for geeks</title>
+    <meta name="Keywords" content="Coding,C++,Java,Js,problem,Python,C,Software">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css"> <!-- **** CSS   ***-->
+
+    <!--    L O G O    -->
+    <link rel="Shortcut Icon" href="/GFG Logo.png">
+
+    <!--      F O N T S     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!--   SEARCH BAR ANIMATION  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <!-- ****************************             M  E  N  U          **************************** -->
+            <ul class="menu">
+
+                <!-- ************       COURSES      ****************** -->
+                <li><a href="#">Courses &nbsp;<div class="container">
+                            <i class="fa fa-arrow-down"></i>
+                        </div></a>
+                    <ul class="Submenu Courses">
+                        <li><a href="#">For Working Professionals<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 WP">
+                                <li><a href="#">DevOps(Live)</a></li>
+                                <li><a href="#">Data Stucture & Algorithm<br>Classes(Live)</a></li>
+                                <li><a href="#">System Design (Live)</a></li>
+                                <li><a href="#">Explore More Live Courses</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li><a href="#">For Students<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 Students">
+                                <li><a href="#">Interview Preparation Courses</a></li>
+                                <li><a href="#">Data Science (Live)</a></li>
+                                <li><a href="#">GATE CS 2023 Test Series</a></li>
+                                <li><a href="#">Data Stucture & Algorithm-Self<br>Paced(C++/Java)</a></li>
+                                <li><a href="#">Data Stucture & Algorithm in Python</a></li>
+                                <li><a href="#">Explore More Self-Paced Courses</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">Programming Languages<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 ForProgLang">
+                                <li><a href="#">C++ Programming -Beginner to <br>Advanced</a></li>
+                                <li><a href="#">Java Programming -Beginner to <br>Advanced</a></li>
+                                <li><a href="#">C Programming -Beginner to<br>Advanced</a></li>
+                                <li><a href="#">Python Foundation</a></li>
+                                <li><a href="#">JavaScript Foundation</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">Web Development<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 ForWebd">
+                                <li><a href="#">Full Stack Development with<br>React and NodeJS(Live)</a></li>
+                                <li><a href="#">Java Backend Development(Live)</a></li>
+                                <li><a href="#">React JS Basics to Advanced</a></li>
+                                <li><a href="#">Javascript Foundation</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Machine Learning and Data<br>Science &nbsp;<div class="Trending">Trending</div>
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 forML">
+                                <li><a href="#">Complete Data Science Program (Live)</a></li>
+                                <li><a href="#">Mastering Data Analytics</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">School Courses<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 ForSchool">
+                                <li><a href="#">CBSE Class 12 Computer Science</a></li>
+                                <li><a href="#">School Guide</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">All Courses</a></li>
+                    </ul>
+                </li>
+
+                <!-- ************       TUTORIALS      ****************** -->
+
+                <li><a href="#">Tutorials<div class="container">
+                            <i class="fa fa-arrow-down"></i>
+                        </div></a>
+                    <ul class="Submenu Tutorials">
+                        <li><a href="#">DSA</a></li>
+
+                        <li><a href="#">Data Structures<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 DS">
+                                <li><a href="#">Arrays</a></li>
+                                <li><a href="#">Linked List</a></li>
+                                <li><a href="#">Stack</a></li>
+                                <li><a href="#">Queue</a></li>
+                                <li><a href="#">Binary Tree</a></li>
+                                <li><a href="#">Binary Search Tree</a></li>
+                                <li><a href="#">Heap</a></li>
+                                <li><a href="#">Hashing</a></li>
+                                <li><a href="#">Graph</a></li>
+                                <li><a href="#">Matrix</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Algorithms<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 Algorithms">
+                                <li><a href="#">Analysis of Algorithms</a></li>
+                                <li><a href="#">Searching Algorithms</a></li>
+                                <li><a href="#">Geometric Algorithms</a></li>
+                                <li><a href="#">Dynamic Programming</a></li>
+                                <li><a href="#">Divide and Conquer</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Interview Corner<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 Interview">
+                                <li><a href="#">Company Preparation</a></li>
+                                <li><a href="#">Practice Company Questions</a></li>
+                                <li><a href="#">Interview Experiences</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">Languages<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 Languages">
+                                <li><a href="#">C++</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">C</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">Web Development<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 WEBD">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">NodeJS</a></li>
+                                <li><a href="#">CSS Frameworks<div class="container">
+                                            <i class="fa fa-arrow-down"></i>
+                                        </div></a>
+                                    <ul class="Submenu3 Framewords">
+                                        <li><a href="#">Bootstrap</a></li>
+                                        <li><a href="#">Tailwind CSS</a></li>
+                                        <li><a href="#">Foundation CSS</a></li>
+                                        <li><a href="#">Bulma</a></li>
+                                        <li><a href="#">Blaze UI</a></li>
+                                    </ul>
+                                </li>
+                            </ul>s
+
+                        <li><a href="#">Ml & Data Science<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 ML&DS">
+                                <li><a href="#">Machine Learning</a></li>
+                                <li><a href="#">Data Science</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li><a href="#">Software Designs<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 SoftwareDesign">
+                                <li><a href="#">Software Design Patterns</a></li>
+                                <li><a href="#">System Design Tutorial</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">CS Subjects
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 CSSubjects">
+                                <li><a href="#">DBMS</a></li>
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">Operating Systems</a></li>
+                                <li><a href="#">Computer Networks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">UPSC
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 UPSC">
+                                <li><a href="#">Geography Notes</a></li>
+                                <li><a href="#">History Notes</a></li>
+                                <li><a href="#">Polity Notes</a></li>
+                                <li><a href="#">Ethics Notes</a></li>
+                                <li><a href="#">Maps</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Banking Exams
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 Banking">
+                                <li><a href="#">SBI Clerk</a></li>
+                                <li><a href="#">SBI PO</a></li>
+                                <li><a href="#">IBPS Clerk</a></li>
+                                <li><a href="#">IBPS PO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GATE
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 Gate">
+                                <li><a href="#">GATE 2024</a></li>
+                                <li><a href="#">Last Minute Notes</a></li>
+                                <li><a href="#">Solved Papers</a></li>
+                                <li><a href="#">Important Dates</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GFG Sheets
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 GFG_Sheets">
+                                <li><a href="#">WebDev Cheat Sheets</a></li>
+                                <li><a href="#">DSA Sheets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SSC CGL
+                                <div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <ul class="Submenu2 SSC_CGL">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Reasoning</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- ************       JOBS      ****************** -->
+
+                <li><a href="#">Jobs<div class="container">
+                            <i class="fa fa-arrow-down"></i>
+                        </div></a>
+
+                    <ul class="Submenu Jobs">
+                        <div class="JobFair">
+                            Job Fair
+                        </div>
+                        <li><a href="#">Apply for a Job</a></li>
+                        <li><a href="#">Apply through Jobathon</a></li>
+                        <li><a href="#">Post a Job <div class="ForRecruiters">
+                                    For Recruiters
+                                </div></a></li>
+                        <li><a href="#">Hire through Jobathon</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!-- ************       PRACTICE      ****************** -->
+
+                <li><a href="#">Practice<div class="container">
+                            <i class="fa fa-arrow-down"></i>
+                        </div></a>
+                    <ul class="Submenu Practice">
+                        <li><a href="#">All DSA Problems</a></li>
+                        <li><a href="#">Problem of the Day</a></li>
+                        <li><a href="#">GFG SDE Sheet</a></li>
+                        <li><a href="#">Curated DSA Lists<div class="container">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div></a>
+                            <ul class="Submenu2 DSA_Lists">
+                                <li><a href="#">Top 50 Array Problems</a></li>
+                                <li><a href="#">Top 50 String Problems</a></li>
+                                <li><a href="#">Top 50 Tree Problems</a></li>
+                                <li><a href="#">Top 50 Graph Problems</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ************       CONTEST     ****************** -->
+
+                <li><a href="#">Contest<div class="container">
+                            <i class="fa fa-arrow-down"></i>
+                        </div></a>
+                    <ul class="Submenu Contest">
+                        <li><a href="#">Solving For India-Hackthon</a></li>
+                        <li><a href="#">GFG Weekly Coding Contest</a></li>
+                        <li><a href="#">Job-A-Thon: Hiring Challenge</a></li>
+                        <li><a href="#">BiWizard School Contest</a></li>
+                        <li><a href="#">All Contests and Events</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+            <div class="Live_Jobs">
+                <h4>Live</h4>
+            </div>
+            <div class="GFG_Logo">
+                <img src="/GFG Logo.png" style="height: 35px;width: 40px;">
+            </div>
+
+            <div class="SearchIcon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+
+            <div class="SearchBar_Header">
+                <input type="text" placeholder="" style="background-color: grey; width: 120px; height: 31px;">
+            </div>
+
+            <div class="LangTag">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </div>
+
+            <div class="SignIn">
+                <h4>Sign In</h4>
+            </div>
+        </nav>
+    </header>
+
+    <!-- *********************************************         S U B H E A D E R           ********************************************* -->
+    <div class="SubHeader">
+        <hr>
+        <div class="SubHeader_Tags">
+            <div class="GFG_JobFair">
+                GFG Job Fair-2023
+            </div>
+            <li><a href="#">DSA</a></li>&nbsp;&nbsp;
+            <li><a href="#">Data Structures</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Algorithm</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Interview Preparation</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Data Science</a></li>&nbsp;&nbsp;
+            <li><a href="#">Topic-wise Practice</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">C</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">C++</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Java</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Python</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Latest Blogs</a></li>&nbsp;&nbsp;
+            <li><a href="#">Competetive Programming</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Javascript</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Machine Learning</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Write & Earn</a></li>
+        </div>
+    </div>
+
+    <!-- *********************************************     P A R T    1   S E A R C H   B A R     *********************************************  -->
+
+    <div class="Part1">
+        <br><br>
+        <div class="Whatdoyouwanttolearn">
+            <h3>Hello,What Do You Want To Learn?</h3>
+
+        </div>
+
+
+        <div class="Search_Part1">
+            <input type="text" id="search" class="searchbar" placeholder=""
+                style="width: 350px;height: 45px; border-bottom-left-radius: 12px; border-top-left-radius: 12px; display: inline-block; text-decoration: none;" />
+
+                    <!--   CODE COPIED FROM NET -->
+
+
+            <script>
+                // Add something to given element placeholder
+                function addToPlaceholder(toAdd, el) {
+                    el.attr('placeholder', el.attr('placeholder') + toAdd);
+                    // Delay between symbols "typing" 
+                    return new Promise(resolve => setTimeout(resolve, 100));
+                }
+
+                // Cleare placeholder attribute in given element
+                function clearPlaceholder(el) {
+                    el.attr("placeholder", "");
+                }
+
+                // Print one phrase
+                function printPhrase(phrase, el) {
+                    return new Promise(resolve => {
+                        // Clear placeholder before typing next phrase
+                        clearPlaceholder(el);
+                        let letters = phrase.split('');
+                        // For each letter in phrase
+                        letters.reduce(
+                            (promise, letter, index) => promise.then(_ => {
+                                // Resolve promise when all letters are typed
+                                if (index === letters.length - 1) {
+                                    // Delay before start next phrase "typing"
+                                    setTimeout(resolve, 1000);
+                                }
+                                return addToPlaceholder(letter, el);
+                            }),
+                            Promise.resolve()
+                        );
+                    });
+                }
+                // Print given phrases to element
+                function printPhrases(phrases, el) {
+                    // For each phrase
+                    // wait for phrase to be typed
+                    // before start typing next
+                    phrases.reduce(
+                        (promise, phrase) => promise.then(_ => printPhrase(phrase, el)),
+                        Promise.resolve()
+                    );
+                }
+
+                // Start typing
+                function run() {
+                    let phrases = [
+                        "Learn C , C++ , Java",
+                        "Data Structures and Algorithms",
+                        "Complete Interview Preparation",
+                        "Geeks For Geeks "
+                    ];
+
+                    printPhrases(phrases, $('#search'));
+                }
+
+                run();
+
+            </script>
+
+
+            <div class="Search">
+                Search
+            </div>
+        </div>
+        <div class="Line_Height">
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="Python_Django">
+            <p>Python Backend Development With Django</p>
+        </div>
+        <div class="AppDev_Kotlin">
+            <p>Master Android App Development with Kotlin</p>
+        </div>
+        <div class="Interview_Prep">
+            <p>Complete Interview Preparation Course</p>
+        </div>
+        <br>
+        <div class="For_You">
+            <!-- *********************************************       F O R   Y O U        *********************************************  -->
+            <h1>For You</h1>
+            <br>
+            <div class="You Reading">
+                <img src="/Read.png" alt=""
+                    style="width:21vw; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+                <h2>Linked List meaning in DSA</h2>
+                <p>A linked list is a linear data structure used for storing a<br>sequence of elements ,where each
+                    element...</p>
+            </div>
+
+            <div class="You Practices">
+                <img src="/practice.png" alt=""
+                    style="width:21vw; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+                <h2>Explore Practice Problems</h2>
+                <p>Solve DSA Problems.Filter based on tags and<br>Company tags.Get curated problem lists by GFG ex...
+                </p>
+            </div>
+
+            <div class="You Learn">
+                <img src="/learn.png" alt=""
+                    style="width:21vw; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+                <h2>Interview Preparation</h2>
+                <p>An interview-centric course designed to prepare you for<br>role of SDA for both product and
+                    service...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- *****************************************         P A R T   2       T O P I C S    *********************************************  -->
+
+    <div class="Part2">
+        <div class="Preorder">
+            <img src="/preorder-traversal_360.gif" alt=""
+                style="width: 46vw; height: 40vh; border-bottom-left-radius: 20px; border-top-left-radius: 20px; display: inline-flex;">
+            <div class="Preorder_Words">
+                <h2>Preorder Traversal of Binary Tree</h2>
+                <div class="Preoder_Para">
+                    <p>Preorder traversal is defined as a type of tree traversal that follows<br>the Root-Left-Right
+                        Policy
+                        where:The root node of the subtree is<br>visited first.Then the left subtree is... </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Data_Structures">
+            <h1>Data Structures</h1>
+            <div class="ViewAll">
+                <p>View All</p>
+            </div>
+            <div class=" Dsa DS_Array">
+                <p>Array</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="Dsa DS_LinkedList">
+                <p>Linked List</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="Dsa DS_Stack">
+                <p>Stack</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="Dsa DS_Queue">
+                <p>Queue</p>
+            </div>
+        </div>
+
+        <div class="AlgoRithms">
+
+            <h1>Algorithms</h1>
+            <div class="ViewAll">
+                <p>View All</p>
+            </div>
+            <div class="Dsa AnalysisofAlgo">
+                <p>Analysis of Algo</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class=" Dsa SearchAlgo">
+                <p>Searching Algo</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="Dsa SortingAlgo">
+                <p>Sorting Algo</p>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="Dsa GraphAlgo">
+                <p>Graph Algo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ****************************************           P A R T   3    C O U R S E S     *********************************************  -->
+
+    <div class="Part3">
+
+        <h1>Courses</h1>
+        <div class="ViewAll_1">
+            <p>View All</p>
+        </div>
+        <div class="P3 JavaBackend">
+            <img src="/Java-backend-live-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>JAVA Backend Development - Live</h5>
+            <br>
+            <p>Beginner to Advanced</p>
+        </div>
+
+        <div class="P3 DevOpsEng">
+            <img src="/devops-live-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>DevOps Engineering - Planning to Production</h5>
+            <p>Beginner to Advanced</p>
+        </div>
+
+        <div class="P3 DSA_SelfPaced">
+            <img src="/dsa-self-paced-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>Data Structures and Algorithms-Self<br>Paced</h5>
+            <p>Beginner to Advanced</p>
+        </div>
+
+        <div class="P3 DSA_Python_Self">
+            <img src="/Data-Structures-With-Python-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>Data Structures and Algorithms in Python<br>-Self Paced</h5>
+            <p>Beginner to Advanced</p>
+        </div>
+
+        <div class="P3 DSA_Classes">
+            <img src="/geeks-classes-live-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>DSA Live for Working Profesionals-<br>Live</h5>
+            <p>Beginner to Advanced</p>
+        </div>
+
+        <div class="P3 FullStack">
+            <img src="/full-stack-node-thumbnail.png" alt=""
+                style="height: 25vh; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 24vw;">
+            <h5>Full Stack Development with React and Node JS -Live</h5>
+            <p>Beginner to Advanced</p>
+        </div>
+
+    </div>
+
+
+    <!-- ******************************************           P A R T  4     V I D E O E S        *********************************************  -->
+    <div class="Part4_Videoes">
+        <h1>Videoes</h1>
+        <div class="ViewAll_Videoes">
+            <p>View All</p>
+        </div>
+
+        <div class="P4 ChatGPT4">
+            <img src="/ChatGPT4_Vidoes.png" alt="">
+            <h5>What is ChatGPT4?|What the difference between ChatGPT3 &</h5>
+            <p>25/03/2023</p>
+        </div>
+        <div class="P4 Flutter">
+            <img src="/Flutter_Videoes.png" alt="">
+            <h5>Flutter:Advantages &<br>Disadvantages</h5>
+            <p>19/03/2023</p>
+        </div>
+        <div class="P4 FullStack_dev">
+            <img src="/Howtobecome_FullStackDev_Videoes.png" alt="">
+            <h5>How to become a Full Stack<br>Developer? Complete Roadmap</h5>
+            <p>20/03/2023</p>
+        </div>
+
+        <br>
+        <br>
+    </div>
+    <hr>
+    <!-- *********************************************       M A I N   F O O T E R        *********************************************  -->
+    <div class="Footer_Main">
+        <div class="GFG_About">
+            <h2><img src="/GFG Logo.png" alt="" style="height: 20px;">&nbsp;&nbsp;GeeksforGeeks</h2>
+            <h5><i class="fa-map-marker" aria-hidden="true" style="color: green;"></i>A-143, 9th Floor, Sovereign
+                Corporate
+                Tower,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sector-136, Noida,
+                Uttar Pradesh - 201305</h5>
+            <h5><i class="fa-envelope" aria-hidden="true" style="height: 30px; color: green;"></i>
+                feedback@geeksforgeeks.org</h5>
+            <br>
+          
+            <div class="Logos">
+                <!--   CODE COPIED FROM NET -->
+                <!----  TWITTER ICON  --->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" 
+        height="64" fill="currentColor" class="bi bi-twitter"
+        viewBox="0 0 16 16">
+
+        <path d="M5.026 15c6.038 0 9.341-5.003 
+        9.341-9.334 0-.14 0-.282-.006-.422A6.685 
+        6.685 0 0 0 16 3.542a6.658 6.658 0 0 
+        1-1.889.518 3.301 3.301 0 0 0 1.447-1.817
+        6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 
+        0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+        3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 
+        0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 
+        2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 
+        3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 
+        2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 
+        0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+    </svg>
+
+    <!----  GOOGLE ICON  --->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" 
+        height="64" fill="currentColor" class="bi bi-google"
+        viewBox="0 0 16 16">
+
+        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 
+        1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 
+        15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 
+        0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 
+        0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 
+        4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 
+        4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003
+        a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+    </svg>
+
+    <!---- YOUTUBE ICON  --->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" 
+        height="64" fill="currentColor" class="bi bi-youtube"
+        viewBox="0 0 16 16">
+
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 
+        6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172
+        .883.22 1.402l.01.104.022.26.008.104c.065.914.073
+        1.77.074 1.957v.075c-.001.194-.01 1.108-.082 
+        2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 
+        1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312
+        -5.569.334-6.18.335h-.142c-.309 0-1.587-.006
+        -2.927-.052l-.17-.006-.087-.004-.171-.007-.171
+        -.007c-1.11-.049 -2.167-.128-2.654-.26a2.007 
+        2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986
+        -.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 
+        1 0 7.68v-.123c.002-.215.01-.958.064-1.778l
+        .007-.103.003-.052.008-.104.022-.26.01-.104c
+        .048-.519.119-1.023.22-1.402a2.007 2.007 0 0 
+        1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17
+        -.007.172-.006.086-.003.171-.007A99.788 99.788 
+        0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157
+        -2.408L6.4 5.209z" />
+    </svg>
+
+            </div>
+        </div>
+
+        <div class="Tags_Footer">
+            <div class="Footer1 Company_Footer">
+                <h5>Company</h5>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>In Media</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Copyright Policy</p>
+                <p>Advertise with us</p>
+            </div>
+            <div class="Footer1 Learn_Footer">
+                <h5>Learn</h5>
+                <p>DSA</p>
+                <p>Algorithms</p>
+                <p>Data Structures</p>
+                <p>SDE Cheat Sheet</p>
+                <p>Machine learning</p>
+                <p>CS Subjects</p>
+                <p>Video Tutorials</p>
+                <p>Courses</p>
+            </div>
+            <div class="Footer1 News_Footer">
+                <h5>News</h5>
+                <p>Top News</p>
+                <p>Technology</p>
+                <p>Work & Career</p>
+                <p>Business</p>
+                <p>Finance</p>
+                <p>Lifestyle</p>
+                <p>Knowledge</p>
+            </div>
+            <div class="Footer1 Languages_Footer">
+                <h5>Languages</h5>
+                <p>Python</p>
+                <p>Java</p>
+                <p>CPP</p>
+                <p>Golang</p>
+                <p>C#</p>
+                <p>SQL</p>
+                <p>Kotlin</p>
+            </div>
+            <div class="Footer1 WebD_Footer">
+                <h5>Web Development</h5>
+                <p>Web Tutorials</p>
+                <p>Django Tutorial</p>
+                <p>HTML</p>
+                <p>JavaScript</p>
+                <p>Bootstrap</p>
+                <p>ReactJS</p>
+                <p>NodeJS</p>
+            </div>
+            <div class="Footer1 Contribute_Footer">
+                <h5>Contribute</h5>
+                <p>Write an Article</p>
+                <p>Improve an Article</p>
+                <p>Pick Topics to Write</p>
+                <p>Write Interview Experience</p>
+                <p>Internships</p>
+                <p>Video Internship</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********************************************      F I X E D   F O O T E R      *********************************************  -->
+    <footer>
+        <h2>Start Your Coding Journey Now!</h2>
+        &nbsp;
+        <h4>Login</h4>
+        &nbsp;&nbsp;&nbsp;
+        <h5>Register</h5>
+    </footer>
+</body>
+
+</html>
+<!-- *********************************************            E  N  D       *********************************************  -->
